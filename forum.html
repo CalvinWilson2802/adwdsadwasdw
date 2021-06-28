@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Crazy Network adalah salah satu Minecraft Server Indonesia yang memiliki fitur unik dan seru untuk dimainkan bersama dengan teman teman kalian!">
+<meta name="theme-color" content="#3490DC">
+<meta name="author" content="Azuriom">
+<meta property="og:title" content="Forum">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://crazynetwork.xyz/forum">
+<meta property="og:image" content="https://crazynetwork.xyz/storage/img/favicon.png">
+<meta property="og:description" content="Crazy Network adalah salah satu Minecraft Server Indonesia yang memiliki fitur unik dan seru untuk dimainkan bersama dengan teman teman kalian!">
+<meta property="og:site_name" content="Crazy Network">
+<meta name="keywords" content="crazynetwork, crazy, network, minecraft, server, indonesia">
+
+<meta name="csrf-token" content="maW8CQwiBiNzRaPJQJ0PGoRNzauUEC7p2xdYkPv4">
+<title>Forum | Crazy Network</title>
+
+<link rel="shortcut icon" href="https://crazynetwork.xyz/storage/img/favicon.png">
+
+<script src="Forum%20Crazy%20Network_files/jquery.js" defer="defer"></script>
+<script src="Forum%20Crazy%20Network_files/bootstrap.js" defer="defer"></script>
+<script src="Forum%20Crazy%20Network_files/axios.js" defer="defer"></script>
+<script src="Forum%20Crazy%20Network_files/script.js" defer="defer"></script>
+<script src="Forum%20Crazy%20Network_files/navigation.js" defer="defer"></script>
+<script src="Forum%20Crazy%20Network_files/clipboard.js" defer="defer"></script>
+<script src="Forum%20Crazy%20Network_files/SmoothScroll.js" defer="defer"></script>
+
+
+<link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+<link href="Forum%20Crazy%20Network_files/css.css" rel="stylesheet">
+<link href="Forum%20Crazy%20Network_files/all.css" rel="stylesheet">
+
+<link href="Forum%20Crazy%20Network_files/bootstrap.css" rel="stylesheet">
+<link href="Forum%20Crazy%20Network_files/style-orange.css" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+<header>
+<div class="header-nav">
+<div id="headerBackground" class="header-background" style="background-position: 0px;background: url('https://crazynetwork.xyz/storage/img/public.png') top / cover no-repeat"></div>
+<div class="header-nav-top navigation">
+<div class="container navigation-content">
+<ul class="header-nav-top-left">
+<li class="item ">
+<a href="https://crazynetwork.xyz/">
+Home
+</a>
+</li>
+<li class="item  active ">
+<a href="https://crazynetwork.xyz/forum">
+Forum
+</a>
+</li>
+</ul>
+<ul class="header-nav-top-mid">
+<li class="item">
+<img src="Forum%20Crazy%20Network_files/logo.png" alt="Logo">
+</li>
+</ul>
+<ul class="header-nav-top-right">
+<li class="item ">
+<a href="https://crazynetwork.xyz/vote">
+Vote
+</a>
+ </li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Support
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+<a class="dropdown-item " href="https://crazynetwork.xyz/support/tickets">Open Ticket</a>
+<a class="dropdown-item " href="https://crazynetwork.xyz/faq">FAQ</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="header-content">
+<div class="container" style="position: relative">
+<div class="header-content-mid">
+<div class="description">
+<div class="copy-ip address_copy" data-text="mc.crazynetwork.xyz" data-copied-text="ip has been copied" data-copy-text="copy server ip">
+<p class="ip">mc.crazynetwork.xyz</p>
+<p class="info">copy server ip</p>
+</div>
+<p class="about">CrazyNetwork adalah server yang tergolong cukup baru, 
+didirikan pada tanggal 19/8/2020, dan masih berdiri sampai sekarang 
+untuk menghadirkan kualitas server Minecraft yang berbeda!.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="header-nav-bottom sub-navigation container">
+<ul class="header-nav-bottom-left">
+<li class="item">
+<div class="online">
+<p><span>132</span> online players !</p>
+</div>
+</li>
+</ul>
+<ul class="header-nav-bottom-mid">
+<li class="item">
+<a href="https://discord.com/invite/EpjRNCP" target="_blank">
+<i class="fab fa-discord"></i>
+</a>
+</li>
+</ul>
+<ul class="header-nav-bottom-right">
+<li class="item">
+<a href="https://crazynetwork.xyz/user/login">
+Login
+</a>
+</li>
+<li class="item">
+<a href="https://crazynetwork.xyz/user/register">
+Register
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="header-mobile-nav">
+<div class="mobile-btn" id="mobile-btn">
+<span id="nav-btn-icon"><i class="fas fa-bars"></i></span>
+</div>
+<ul class="mobile-navigation" id="mobile-nav">
+<li>
+<img src="Forum%20Crazy%20Network_files/logo.png" alt="Logo">
+</li>
+<li class="item ">
+<a href="https://crazynetwork.xyz/">
+<span class="name">Home</span>
+</a>
+</li>
+<li class="item  active ">
+<a href="https://crazynetwork.xyz/forum">
+<span class="name">Forum</span>
+</a>
+</li>
+<li class="item ">
+<a href="https://crazynetwork.xyz/vote">
+<span class="name">Vote</span>
+</a>
+</li>
+<li class="item nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Support
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+<a class="dropdown-item " href="https://crazynetwork.xyz/support/tickets">Open Ticket</a>
+<a class="dropdown-item " href="https://crazynetwork.xyz/faq">FAQ</a>
+</div>
+</li>
+<li class="item">
+<a href="https://crazynetwork.xyz/user/login">
+<span class="name">Login</span>
+</a>
+</li>
+<li class="item">
+<a href="https://crazynetwork.xyz/user/register">
+<span class="name">Register</span>
+</a>
+</li>
+</ul>
+</div> </header>
+<main>
+<div class="container">
+<div id="status-message"></div>
+</div>
+<div id="go-to-bottom-div">
+<div class="container content">
+<div class="page-container">
+<div class="page-container-content forum">
+<h2 class="page-container-title">Forum</h2>
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="https://crazynetwork.xyz/">Home</a></li>
+<li class="breadcrumb-item"><a href="https://crazynetwork.xyz/forum">Forum</a></li>
+</ol>
+</nav>
+<div class="row">
+<div class="col-md-9">
+<div class="card mb-3">
+<div class="card-header">
+<h2 class="h3">Important</h2>
+<small>Beberapa hal yang harus dibaca mengenai Server dan Forum</small>
+</div>
+<div class="list-group list-group-flush">
+<div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/tutorial-thread">Tutorial Thread</a>
+</h3>
+Beberapa Tutorial untuk penggunaan Thread
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+1 discussion
+<br>
+1 post
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card mb-3">
+ <div class="card-header">
+<h2 class="h3">Community</h2>
+<small>Thread yang berisi tentang Komunitas</small>
+</div>
+<div class="list-group list-group-flush">
+<div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/introduction">Introduction</a>
+</h3>
+Perkenalkan dirimu dan cari teman baru dari Thread buatanmu!
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+1 discussion
+<br>
+5 posts
+</div>
+</div>
+</div>
+<div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/marketplace">Marketplace</a>
+</h3>
+Buat Threadmu yang berhubungan dengan WTB, WTS, WTT dalam Server!
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+1 discussion
+<br>
+2 posts
+</div>
+</div>
+</div>
+<div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/clan-recruitment">Clan Recruitment</a>
+</h3>
+Rekrut Member baru untuk Clanmu di Server!
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+0 discussions
+<br>
+0 posts
+</div>
+</div>
+</div>
+<div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/oot">Out of Topic</a>
+</h3>
+Off Topic Thread
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+0 discussions
+<br>
+0 posts
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card mb-3">
+<div class="card-header">
+<h2 class="h3">General Minecraft</h2>
+<small></small>
+</div>
+<div class="list-group list-group-flush">
+<div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/public">Discussion</a>
+</h3>
+Diskusi mengenai Server disini!
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+4 discussions
+<br>
+6 posts
+</div>
+</div>
+</div>
+<div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/question-answer">Question</a>
+</h3>
+Buat Thread Pertanyaan pertanyaanmu mengenai Server disini!
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+2 discussions
+<br>
+4 posts
+</div>
+</div>
+</div>
+<div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/suggestion">Suggestion</a>
+</h3>
+Berikan Ide ide cemerlangmu untuk Server dan mari diskusikan bersama sama!
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+4 discussions
+<br>
+5 posts
+</div>
+</div>
+</div>
+<div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/other">Other</a>
+</h3>
+Thread yang tidak ada dikriteria manapun!
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+0 discussions
+<br>
+0 posts
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card mb-3">
+<div class="card-header">
+<h2 class="h3">Support</h2>
+<small></small>
+</div>
+<div class="list-group list-group-flush">
+ <div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/refund">Item Refund</a>
+</h3>
+Baca Cara Request Refund Item-mu disini
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+83 discussions
+<br>
+170 posts
+</div>
+</div>
+</div>
+<div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/report-player">Report Player</a>
+</h3>
+Menemukan Player yang menggunakan HC/Bug? Laporkan disini!
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+39 discussions
+<br>
+87 posts
+</div>
+</div>
+</div>
+<div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/info-donasi">Donation Info</a>
+</h3>
+Baca disini untuk mendapatkan Info seputar Donasi!
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+1 discussion
+<br>
+1 post
+</div>
+</div>
+</div>
+ <div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/ban-appeal">Ban Appeal</a>
+</h3>
+Accountmu di banned karena HC? Buat permohonan Unbanmu disini!
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+1 discussion
+<br>
+1 post
+</div>
+</div>
+</div>
+<div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/forgot-password">Forgot Password</a>
+</h3>
+Ajukan permintaan Password Resetmu disini!
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+1 discussion
+<br>
+1 post
+</div>
+</div>
+</div>
+<div class="list-group-item">
+<div class="row">
+<div class="col-xl-1 col-md-2 col-2 text-center">
+<i class="fas fa-comments fa-2x fa-fw forum-big-icon"></i>
+</div>
+<div class="col-xl-8 col-md-7 col-10 pl-md-0">
+<h3 class="h5">
+<a href="https://crazynetwork.xyz/forum/bug-report">Bug Report</a>
+</h3>
+Baca disini untuk melaporkan Bug!
+</div>
+<div class="col-xl-3 col-md-3 d-none d-md-block">
+1 discussion
+<br>
+1 post
+</div>
+</div>
+</div>
+ </div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card mb-3">
+<div class="card-header">
+<i class="fas fa-comments fa-fw"></i> Latest posts
+</div>
+<div class="list-group list-group-flush">
+<div class="list-group-item">
+<a href="https://crazynetwork.xyz/forum/discussions/175">
+Toxic
+</a>
+<br>
+<small>
+<a href="https://crazynetwork.xyz/forum/users/3">Keinsteyn</a>,
+June 28, 2021
+</small>
+</div>
+<div class="list-group-item">
+<a href="https://crazynetwork.xyz/forum/discussions/175">
+Toxic
+</a>
+<br>
+<small>
+<a href="https://crazynetwork.xyz/forum/users/126">edbert_pro</a>,
+June 28, 2021
+</small>
+</div>
+<div class="list-group-item">
+<a href="https://crazynetwork.xyz/forum/discussions/175">
+Toxic
+</a>
+<br>
+<small>
+<a href="https://crazynetwork.xyz/forum/users/126">edbert_pro</a>,
+June 28, 2021
+</small>
+</div>
+</div>
+</div>
+<div class="card mb-3">
+<div class="card-header">
+<i class="fas fa-chart-bar fa-fw"></i> Stats
+</div>
+<div class="card-body">
+<ul class="list-unstyled mb-0">
+<li>Discussions: 139</li>
+<li>Posts: 284</li>
+<li>Users: 557</li>
+</ul>
+</div>
+</div>
+<div class="card mb-3">
+<div class="card-header">
+<i class="fas fa-users fa-fw"></i> Online users
+</div>
+<div class="card-body">
+No online users now...
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="footer">
+<div class="container">
+<div class="top-footer">
+<img src="Forum%20Crazy%20Network_files/logo.png" alt="Logo">
+<div class="top-footer-content">
+<div class="copyright">
+<div class="mention">
+Copyright © 2021 Crazy Network - All Rights Reserved. <br>
+ </div>
+<div class="copyright-links">
+</div>
+</div>
+<div class="socials">
+<div class="social-links">
+<a href="https://discord.com/invite/EpjRNCP" target="_blank">
+<i class="fab fa-discord"></i>
+</a>
+</div>
+</div>
+<div class="links">
+<ul>
+<li><a href="https://minecraft-mp.com/server-s270915">Vote</a></li>
+<li><a href="https://crazynetwork.xyz/forum">Forum</a></li>
+</ul>
+<ul>
+<li><a href="https://discord.com/invite/EpjRNCP">Discord</a></li>
+<li><a href="https://www.facebook.com/crazynetworkindonesia">FB Fanpage</a></li>
+</ul>
+</div>
+</div>
+</div>
+<a class="mention-dev" href="https://discord.com/invite/GAyf7e4Zhw" target="_blank">
+Sponsored by Leyz Store <i style="color: orangered;" class="fas fa-heart"></i>
+</a>
+</div>
+</footer>
+
+</body></html>
